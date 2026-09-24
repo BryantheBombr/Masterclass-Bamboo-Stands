@@ -1,0 +1,219 @@
+body {
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  background-color: rgba(242, 239, 239, 0.687);
+}
+
+.nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  font-family: "Karla";
+  gap: 20px;
+  height: 30px;
+  padding: 0 20px;
+  border-bottom: 2px solid black;
+}
+
+.nav a {
+  color: hsl(273, 4%, 51%);
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: hsl(270, 9%, 17%);
+}
+
+.nav-links a {
+  margin-right: 12px;
+}
+
+.nav img {
+  max-width: 60px;
+  max-height: 35px;
+  margin-left: 40px;
+}
+
+.nav-links a:first-child {
+  margin-left: auto;
+}
+
+.container {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 0 20px 40px;
+}
+
+.card {
+  background-color: white;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+.intro-card {
+  text-align: center;
+}
+
+.cta-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn {
+  font-weight: 700px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 10px;
+}
+
+.btn-primary {
+  background-color: hsl(176, 50%, 47%);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: hsl(176, 72%, 28%);
+}
+
+.btn-secondary {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: hsl(0, 0%, 48%);
+}
+
+.btn-disabled {
+  background-color: hsl(0, 0%, 70%);
+  color: #ffffff;
+  cursor: not-allowed;
+}
+
+.intro-card {
+  text-align: center;
+  position: relative;
+  margin-top: -80px;
+  z-index: 10;
+}
+
+.intro-card h1 {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.intro-card p {
+  font-size: 11px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.stat-item h2 {
+  font-size: 16px;
+  margin: 0 0 8px 0;
+}
+
+.stat-item p {
+  margin: 0;
+  font-size: 8px;
+  color: rgba(32, 32, 32, 0.842);
+}
+
+.stat-item:not(:last-child) {
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+  padding-right: 40px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 89%;
+  height: 100%;
+  background-color: hsl(176, 50%, 47%);
+}
+
+.about-card h2 {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.about-card p {
+  line-height: 1.6;
+  font-size: 9px;
+  color: rgba(32, 32, 32, 0.842);
+}
+
+.tier-card {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 28px;
+  margin-top: 24px;
+}
+
+.tier-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tier-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.pledge-cost {
+  color: hsl(176, 50%, 47%);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.tier-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.stock strong {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.stock span {
+  font-size: 12px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+/* Out of Stock State */
+.tier-disabled {
+  opacity: 0.5;
+}
+
+.project-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
